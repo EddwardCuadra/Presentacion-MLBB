@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
+body{
+   /* background-image: url(HEROES/yu_zhing.jpg);  */
+    /* background-image: linear-gradient(#000000, #e7ac95e4 , #deabf2,
+    #a1d2ff , #f19895 ,#9ae9cc , #f3ef9e); */
+    background-image: linear-gradient(#000000,#003e6d, #010e74e4 ,#000000);
+}
+
+.container{  
+    background: #fff1;
+    width: 85%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    -webkit-backdrop-filter : blur (50px) ;
+    backdrop-filter : blur (15px);
+    background-coLor: rgba (243, 243, 243, 0.2);
+}
+#filter{
+padding: 0 15px;
+border-radius: 6px;
+box-shadow: 0 10px 30px #000;
+border: 1px solid #ffffff40;
+}
+/* codigo de yutub para colocar horizontlmente*/
+.nav-brand{
+    width: 200px;
+    padding: 10px 0 ;
+}
+li a img{
+    width: 50px;
+}
+.comba{
+    width: 100%;
+}
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5px;
+    padding: 10px 0;
+    margin: 20px 0;
+   
+    
+}
+.nav-main ul {
+    display: flex;
+    text-decoration: none;
+}
+.nav-main ul  li {
+padding: 10px;
+text-decoration: none;
+display: block;
+}
+.nav-main ul .nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}/* codigo de yutub para colocar horizontlmente*/
+h2{
+    margin-top: 20px;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.pagina-principal{
+    width: 95%;
+    height: 80vh;
+    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-hero:hover{
+    box-shadow: 2px 2px 10px 2px #fff;
+    width: 250px;
+    z-index: 50;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    /* backdrop-filter : blur (15px);
+    background-coLor: rgba (243, 243, 243, 0.2); */
+}
+.select-hero{
+    /* width: 100%;
+    */
+    /* position: relative;
+    transition: all 1s ease; */
+}
+.elegir{
+    /* transition: all 1s ease; */
+}
+.elegir:hover{
+    /* width: 250px;
+    z-index: 50;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    */
+    
+}
+    
+div a img{
+    width: 200px;
+    height: 400px;
+    box-shadow: 1px 1px 5px 1px rgb(41, 39, 39);
+    object-fit: cover;
+}
+
+/**************DIVISION DE TANKS*****************/
+.contenedor-heroe{
+    width: 90%;
+    height: 100vh;
+    margin-left:auto ;
+    margin-right:auto ;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: -20px;
+    position: relative;
+}
+.contenedor-heroe>h2{
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+
+.caja_heroes{
+    padding-top: 0;
+    position: relative;
+    align-items: center;
+}
+
+.boton{
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px;
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left:auto ;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    text-align: center;
+    margin-top: 5px;
+    align-items: center;
+}
+
+
+
+/************ CONTENEDOR ASESINO **************/
+/*  CODIGO IMPORTE */
+/* div.contenedor-heroe#area-mago>div3.caja_heroes>div2 */
