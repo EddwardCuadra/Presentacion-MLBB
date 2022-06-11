@@ -190,10 +190,12 @@ div a img{
     align-items: center;
     padding-bottom: -20px;
     position: relative;
+    background-color: rgba(255, 0, 0, 0.212);
 }
 .columna_izquierda{
     width: 33%;
     height: 100%;
+    background-color: rgba(229, 255, 0, 0.212);
 }
 .columna_izquierda a img{
     width: 60%;
@@ -206,7 +208,7 @@ div a img{
     flex-direction: column;
     margin-top: 20px;
     text-align: justify;
-    color: aliceblue;
+    background-color: rgba(0, 255, 42, 0.212);
     text-decoration: underline;
 }
 .columna_centro div{
@@ -225,4 +227,5 @@ div a img{
     align-items: center;
     padding-bottom: -20px;
     position: relative;
+    background-color: rgba(255, 115, 0, 0.212);
 }
