@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Noto Serif', serif;
+    
 }
 body{
    /* background-image: url(HEROES/yu_zhing.jpg);  */
@@ -17,6 +18,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 20;
+    
     -webkit-backdrop-filter : blur (50px) ;
     backdrop-filter : blur (15px);
     background-coLor: rgba (243, 243, 243, 0.2);
@@ -43,8 +45,8 @@ li a img{
     justify-content: space-between;
     align-items: center;
     height: 5px;
-    padding: 10px 0;
-    margin: 20px 0;
+    padding: 12px 10px;
+    margin: 35px 0;
    
     
 }
@@ -99,8 +101,6 @@ div a img{
     margin-right:auto ;
     left: 0;
     right: 0;
-    top: 0;
-    margin-top: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -109,7 +109,7 @@ div a img{
 }
 .contenedor-heroe>h2{
     position: absolute;
-    top: 60px;
+    top: 100px;
     text-align: center;
     color: aliceblue;
     text-decoration: underline;
@@ -117,7 +117,7 @@ div a img{
 
 
 .caja_heroes{
-    padding-top: 0;
+    padding-top: 100px;
     position: relative;
     align-items: center;
 }
@@ -139,23 +139,28 @@ div a img{
     align-items: center;
 }
 
-
+.seccion-personajes>h2{
+    font-size: 50px;
+    text-decoration: none;
+    
+}
+.seccion-personajes{
+    margin: 10  0px 0;
+    text-align: center;
+}
 
 /************ CONTENEDOR ASESINO **************/
 /*  CODIGO IMPORTE */
 /* div.contenedor-heroe#area-mago>div3.caja_heroes>div2 */
-
-
 /**************FICHA DE HEROES*****************/
 .ficha_heroe {
     width: 90%;
-    height: 100vh;
+    height: 75vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 0;
-    margin-top: 0;
+    margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -164,7 +169,7 @@ div a img{
     background-color: rgba(255, 0, 0, 0.212);
 }
 .columna_izquierda{
-    width: 33%;
+    width: 30%;
     height: 100%;
     background-color: rgba(229, 255, 0, 0.212);
 }
@@ -173,7 +178,7 @@ div a img{
     height: 60%;
 }
 .columna_centro{
-    width: 33%;
+    width: 39%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -186,12 +191,8 @@ div a img{
 }
 
 .columna_derecha {
-    width: 33%;
+    width: 30%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     padding-bottom: -20px;
     position: relative;
     background-color: rgba(255, 115, 0, 0.212);
@@ -210,43 +211,147 @@ div a img{
     right: 0;
     margin: auto;
 }
-.columna_centro div{
-    border: 2px solid #fff;
-}
 .columna_centro h2{
-    position: absolute;
+    text-align: center;
     top: 0;
     margin: 5px 0;
 }
+/*     Parte hechizos       */
+.titulo-hero{
+    font-size: 25px;
+    text-decoration: none;
+    
+}
 .hechizos{
     width: 80%;
-    height: 100px;
-    margin: 10px 0;
+    height: 50px;
+    margin: 5px 0;
     text-align: center;
+    display: flex;
+
+    justify-content: space-evenly;
 }
+.hechizos-batalla{
+    object-fit: cover;
+    width: 50px;
+}
+/**********************/    
+/*      Parte emblemas       */
 .emblemas{
     text-align: center;
     width: 80%;
-    height: 100px;
-    margin: 10px 0;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+/*   -------Parte emblema---------   */
 .equipamiento{
     text-align: center;
     width: 90%;
-    height: 140px;
+    height: 80px;
     margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
 }
+.item-equipamiento{
+    width: 50px;
+}
+/*   Parte vombo - ventana emergente   */
 .combos{
-    text-align: center;
+    text-align: center;         /*      Hacer un botton        */
     width: 90%;
-    height: 190px;
+    height: 30px;
     margin: 10px;
 }
 /*******    columna derecha detalles    *******/
-.skins_carusel{
+.skin_carusel>h2 , h3{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.skis_carusel{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    
+    color: rgb(183, 255, 0);
+}
+.horizontal{
     width: 90%;
-  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
+}
+.video_guia{
+    background: #003e6d;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+}
+.guias{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
 }
 
+.imagen_carusel{
+    width: 100%;
+    height: 100%;
+}
+/*************CARUSEL***************/
+.carusel{
+    padding-bottom: 5px;
+}
+/* Parte del video */
+.video_guia{
+    text-align: center;
+}
+.video_guia>h3{
+    padding: 4px 0;
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+    padding-bottom: 20px;
+}
+video{
+    width: 80%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 50;
+    object-fit: cover;
+    position: absolute;
+}
 
+.caja-ficha-heroe{
+    position: relative;
+    text-align: center;
+    background: rgb(0, 78, 180);
+    
+}
+.nombre-heroe{
+    position: absolute;
+    text-align: center;
+   top: 0;
+   padding-top: 4px 0;
+    z-index: 80;
+}
+  
 

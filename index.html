@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
@@ -41,7 +45,7 @@
 
 
     
-    <div class="contenedor-heroe" id="area-tank">
+    <div class="contenedor-heroe" id="area-tank" style="background: rgba(8, 0, 113, 0.455);">
       <h2>TANK AREA </h2>
       <div class="caja_heroes">
         <div><a href="#"><img class="select-hero" src="HEROES/TANK/atlas.jpg" alt=""></a></div>
@@ -59,7 +63,7 @@
 
 
     
-    <div class="contenedor-heroe" id="area-jg">
+    <div class="contenedor-heroe" id="area-jg"  style="background: rgb(39, 0, 112);">
       <h2>Assasin</h2>
       <div class="caja_heroes">
         <div><a href="#"><img class="select-hero" src="HEROES/JG/karina.webp" class="karina" alt=""></a></div>
@@ -77,7 +81,7 @@
 
 
     
-    <div class="contenedor-heroe" id="area-mago">
+    <div class="contenedor-heroe" id="area-mago" style="background: rgb(0, 109, 117);">
       <h2>Mago</h2>
       <div class="caja_heroes">
         <div><a href=""><img class="select-hero" src="HEROES/MAGO/kagura.jpg" alt=""></a></div>
@@ -95,7 +99,7 @@
 
 
 
-    <div class="contenedor-heroe" id="area-combatiente">
+    <div class="contenedor-heroe" id="area-combatiente" style="background: rgb(189, 3, 0);">
       <h2>Combatiente</h2>
       <div class="caja_heroes">
         <div><a href="#"><img class="select-hero" src="HEROES/COMBATIENTE/ALDOUS.jpg" alt=""></a></div>
@@ -113,25 +117,27 @@
 
 
 
-    <div class="contenedor-heroe" id="area-apoyo">
+    <div class="contenedor-heroe" id="area-apoyo" style="background: rgb(0, 144, 48);">
       <h2>Apoyo</h2>
-      <div class="caja_heroes">
-        <div><a href="#"><img class="select-hero" src="HEROES/APOYO/ANGELA.jpg" alt=""></a></div>
-        <div class="boton"><strong>ESTES</strong></div>
-      </div>
-      <div class="caja_heroes">
-        <div><a href="#"><img class="select-hero" src="HEROES/APOYO/estes.png" alt=""></a></div>
-        <div class="boton"><strong>FLORYN</strong></div>
-      </div>
-      <div class="caja_heroes">
-        <div><a href="#"><img class="select-hero" src="HEROES/APOYO/FLORYN.jpg" alt=""></a></div>
-        <div class="boton"><strong>ANGELA</strong></div>
-      </div>
+      <!-- <div class="subcontenedor"> -->
+        <div class="caja_heroes">
+          <div><a href="#"><img class="select-hero" src="HEROES/APOYO/ANGELA.jpg" alt=""></a></div>
+          <div class="boton"><strong>ESTES</strong></div>
+        </div>
+        <div class="caja_heroes">
+          <div><a href="#"><img class="select-hero" src="HEROES/APOYO/estes.png" alt=""></a></div>
+          <div class="boton"><strong>FLORYN</strong></div>
+        </div>
+        <div class="caja_heroes">
+          <div><a href="#"><img class="select-hero" src="HEROES/APOYO/FLORYN.jpg" alt=""></a></div>
+          <div class="boton"><strong>ANGELA</strong></div>
+        </div>
+      <!-- </div> -->
     </div>
 
 
 
-    <div class="contenedor-heroe" id="area-tirador">
+    <div class="contenedor-heroe" id="area-tirador" style="background: rgb(94, 118, 0);">
       <h2>Tirador</h2>
       <div class="caja_heroes">
         <div><a href="#"><img class="select-hero" src="HEROES/TIRADOR/CLINT.jpg" alt=""></a></div>
@@ -147,29 +153,97 @@
       </div>
     </div>
     
-  
-     <!--  Ficha de Heroes  --> 
-  
-<div class="ficha_heroe " id="ficha_heroe_atlas">
+    <div class="seccion-personajes"><h2> Seccion personajes </h2></div>
+
+    <!--  cambiar el nombre si es necesario xd
+    Herramienta secreta -->
+    <div id="ficha_heroe_atlas" style="color: transparent; margin-bottom: 110px;">ATLAS</div>    
+    
+  <!--  Ficha de Heroes  --> 
+<div class="ficha_heroe ">
+  <h3  class="nombre-heroe">ATLAS</h3>
+
   <div class="columna_izquierda">
     <a href=""><img src="HEROES/TANK/atlas.jpg" alt=""></a>
   </div>
  <!-- INICIO -->
   <div class="columna_centro">
-    <h2>ATLAS</h2>
-    <div class="hechizos">HECHIZOS</div>
-    <div class="emblemas">EMBLEMAS</div>
-    <div class="equipamiento">EQUIPAMIENTOS</div>
+   
+    <h2 class="titulo-hero">Hechizos</h2>
+    <div class="hechizos">
+        <img class="hechizos-batalla" src="EMBLEMAS/tank.png" alt="emblema-tank">
+        <img class="hechizos-batalla" src="EMBLEMAS/mago.png" alt="emblema-mago">
+        <img class="hechizos-batalla" src="EMBLEMAS/apoyo.png" alt="emblema-apoyo">
+    </div>
+    <h2 class="titulo-hero">Emblemas</h2>
+    <div class="emblemas">
+        <img class="hechizos-batalla" src="EMBLEMAS/tank.png" alt="">
+        <img class="hechizos-batalla" src="EMBLEMAS/tank.png" alt="">
+        <img class="hechizos-batalla" src="EMBLEMAS/tank.png" alt="">
+    </div>
+    <h2 class="titulo-hero">Equipamiento</h2>
+    <div class="equipamiento">
+      <img class="item-equipamiento" src="EMBLEMAS/asesino.png" alt="">
+      <img class="item-equipamiento" src="EMBLEMAS/asesino.png" alt="">
+      <img class="item-equipamiento" src="EMBLEMAS/asesino.png" alt="">
+      <img class="item-equipamiento" src="EMBLEMAS/asesino.png" alt="">
+      <img class="item-equipamiento" src="EMBLEMAS/asesino.png" alt="">
+      <img class="item-equipamiento" src="EMBLEMAS/asesino.png" alt="">
+    </div>
+   
     <div class="combos">COMBOS</div>
   </div>
 
   <!-- FIN -->
   <div class="columna_derecha">
-    <div class="skis_carusel"><a href="#"><img src="HEROES/TANK/atlas.jpg" alt=""></a></div>
-    <div class="video_guia"><a href="#"><img src="HEROES/TANK/belerick.jpg" alt=""></a></div>
+    <div class="skin_carusel">
+      <!--carusel-->
+      <h2>Apariencias</h2>
+      
+
+      <div class="carrousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="1500" >
+              <img src="HEROES/TANK/ATLAS Horizontal.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img src="HEROES/TANK/atlas skin 2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img src="HEROES/TANK/atlas basic 1.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    <div class="video_guia">
+      <!---Video-->
+      <h3>Video Guía</h3>
+        <div class="contenedor_video_guia">
+          <video autoplay loop muted src="Videos/screen-programin.mp4"></video>      
+        </div>
+    </div>
   </div>
+  
 </div>
 
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
